@@ -1,0 +1,103 @@
+.projects {
+  position: relative;
+  height: 400vh;
+}
+
+.projects-imageswrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.projects img {
+  position: absolute;
+  height: clamp(200px, 25vw, 300px);
+  width: clamp(200px, 25vw, 300px);
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.projects img:nth-of-type(1) {
+  top: 15%;
+  left: 50%;
+}
+
+.projects img:nth-of-type(2) {
+  top: 24%;
+  left: 60%;
+}
+
+.projects img:nth-of-type(3) {
+  top: 33%;
+  left: 50%;
+}
+
+.projects img:nth-of-type(4) {
+  top: 42%;
+  left: 40%;
+}
+
+.projects img:nth-of-type(5) {
+  top: 51%;
+  left: 60%;
+}
+
+.projects img:nth-of-type(6) {
+  top: 60%;
+  left: 90%;
+}
+
+.projects img:nth-of-type(7) {
+  top: 69%;
+  left: 40%;
+}
+
+.projects img:nth-of-type(8) {
+  top: 78%;
+  left: 60%;
+}
+
+.projects img:nth-of-type(9) {
+  top: 20%;
+  left: 0;
+}
+
+.projects img:nth-of-type(10) {
+  top: 45%;
+  left: 100%;
+}
+.projects img:nth-of-type(11) {
+  top: 55%;
+  left: 0;
+}
+
+.projects-title {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  text-align: center;
+  font-size: clamp(60px, 20vw, 175px);
+  line-height: 1;
+}
+
+.projects-title-passion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projects-title-passion::after {
+  content: "";
+  display: inline-block;
+  height: clamp(2.5px, 1vw, 7.5px);
+  width: clamp(50px, 10vw, 100vw);
+  background-color: white;
+}

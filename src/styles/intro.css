@@ -1,0 +1,65 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-block: 150px;
+  margin-inline: 25px;
+}
+
+.intro h1 {
+  font-family: "victorserif";
+  font-size: clamp(50px, 10vw, 125px);
+  font-weight: 100;
+  line-height: 1;
+}
+
+.intro p {
+  font-size: clamp(15px, 2vw, 30px);
+}
+
+.intro .word,
+.intro .char {
+  white-space: nowrap;
+  /* display: inline-block; */
+}
+
+.intro-first,
+.intro-second {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-first {
+  padding-inline: clamp(15px, 7.5vw, 100px) 15px;
+  gap: 75px;
+}
+
+.intro-first p {
+  text-align: end;
+}
+
+.intro-second {
+  gap: clamp(50px, 7.5vw, 75px);
+  padding-inline: clamp(10px, 3vw, 25px);
+}
+
+.intro-second-desktop {
+  display: none;
+  gap: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-second {
+    padding-inline: clamp(150px, 22.5vw, 250px) 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro-second-mobile {
+    display: none;
+  }
+
+  .intro-second-desktop {
+    display: flex;
+  }
+}

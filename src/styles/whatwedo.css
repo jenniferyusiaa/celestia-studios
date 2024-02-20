@@ -1,0 +1,40 @@
+.whatwedo {
+  display: flex;
+  flex-direction: column;
+  width: clamp(300px, 85vw, 1500px);
+  gap: 50px;
+  margin-block: 100px;
+  padding: clamp(25px, 10vw, 150px);
+}
+
+.whatwedo .word,
+.whatwedo .char {
+  display: inline-block;
+}
+
+.whatwedo h1 {
+  font-size: clamp(25px, 5vw, 60px);
+}
+
+.whatwedo p {
+  font-size: clamp(15px, 2vw, 25px);
+}
+
+.whatwedo-mobile {
+  display: block;
+}
+
+.whatwedo-desktop {
+  display: none;
+  gap: 75px;
+}
+
+@media screen and (min-width: 1440px) {
+  .whatwedo-mobile {
+    display: none;
+  }
+
+  .whatwedo-desktop {
+    display: flex;
+  }
+}

@@ -1,0 +1,42 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-left: 25px;
+  font-family: "victorserif";
+  font-size: clamp(60px, 12vw, 125px);
+  line-height: 1;
+  overflow: hidden;
+}
+
+.services a:hover {
+  text-decoration: clamp(1px, 0.5vw, 2.5px) underline;
+  text-underline-offset: clamp(5px, 0.6vw, 12px);
+}
+
+.services-slider {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: clamp(150px, 30vw, 350px);
+  width: clamp(150px, 30vw, 350px);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.services-slider img {
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.services-cursor {
+  position: fixed;
+  height: fit-content;
+  width: fit-content;
+  font-size: clamp(15px, 2.5vw, 30px);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}

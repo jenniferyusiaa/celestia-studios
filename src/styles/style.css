@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "ppneuemontreal-book";
+  src: url("./typography/ppneuemontreal-book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ppneuemontreal-light";
+  src: url("./typography/ppneuemontreal-light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "victorserif";
+  src: url("./typography/victorserif-30light\ \(1\).woff2") format("woff2");
+}
+
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --lavender-blue: #6597d8;
+  --color-black: #0a0a0a;
+}
+
+html {
+  /* scroll-behavior: smooth; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: "ppneuemontreal-light";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
